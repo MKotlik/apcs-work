@@ -23,7 +23,6 @@ public BarCode(BarCode x){
 	_checkDigit = x._checkDigit;
 }
 
-
 //post: computes and returns the check sum for _zip
 private int checkSum(){
 	int regularSum = 0;
@@ -44,15 +43,15 @@ public String toString(){
 	return checkedZip + "\t" + symbolicCode;
 }
 
-/*
-public boolean equals(Object other){
 
+public boolean equals(Object other){
+	return this == other || (other instanceof BarCode && toString().equals(other.toString()));
 }
 // postcondition: false if the object is not a BarCode, 
 // false if it is a non-matching barcode
 // true when they match.
 
-
+/*
 public int compareTo(Comparable other){
 
 }

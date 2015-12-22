@@ -8,5 +8,9 @@ public class Driver{
 
 		BarCode c = new BarCode("10282");
 		System.out.println(c.toString());
+
+		System.out.println(a.equals(a));
+		System.out.println(a.equals(b));
+		System.out.println(a.equals(c));
 	}
 }
